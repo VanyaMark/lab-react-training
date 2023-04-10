@@ -36,14 +36,7 @@ nav p {
   font-weight: 600;
 }
  
-h2 {
-  padding: 15px 30px;
-  border: 1px solid #6d6d6d;
-  background: lightcyan;
-  width: 300px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
+
  
 h3 {
   padding: 5px 50px;
@@ -173,4 +166,37 @@ span.black {
 
 .cc-details {
   font-size: 1rem;
+}
+
+.rating img {
+  width: 50px;
+}
+
+.driverCard {
+  margin: 5px 0px;
+  background-color: #455eb5;
+  border-radius: 20px;
+  color: white
+}
+
+.driverCard div:nth-child(1) {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+
+.driverCard div:nth-child(1) img {
+  width: 150%;
+  height: auto;
+  margin-left: -35px
+}
+
+.driverCard h2 {
+  font-size: 2.5rem;
+}
+.driverCard p {
+  font-size: 1.2rem;
 }
