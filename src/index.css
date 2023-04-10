@@ -180,18 +180,24 @@ span.black {
 }
 
 .driverCard div:nth-child(1) {
-  position: relative;
+ /* position: relative;
   width: 150px;
   height: 150px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 50%; */
 
+/* Diogo Style */
+width: 150px;
+height: 150px;
+clip-path: circle(50%)
 }
 
 .driverCard div:nth-child(1) img {
-  width: 150%;
+/*  width: 150%;
   height: auto;
-  margin-left: -35px
+  margin-left: -35px */
+  /*Diogo Style */
+  height: 150px;
 }
 
 .driverCard h2 {
@@ -199,4 +205,9 @@ span.black {
 }
 .driverCard p {
   font-size: 1.2rem;
+}
+
+.dice {
+  width: 100px;
+  height: auto;
 }

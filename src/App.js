@@ -7,6 +7,9 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClcikablePicture from './components/ClcikablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -104,6 +107,16 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      {/* ITERATION 8 */}
+      <LikeButton />
+      <LikeButton />
+
+      {/* ITERATION 9 */}
+      <ClcikablePicture img="./../maxence.png" imgClicked="./../maxence-glasses.png" />
+
+      {/* ITERATION 10 */}
+      <Dice />
     </div>
   );
 }
