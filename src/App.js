@@ -12,6 +12,7 @@ import ClcikablePicture from './components/ClcikablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 function App() {
   return (
@@ -135,6 +136,9 @@ function App() {
 
       {/* ITERATION 12 */}
       <NumbersTable limit={30} />
+
+      {/* ITERATION 13 */}
+      <FaceBook />
     </div>
   );
 }

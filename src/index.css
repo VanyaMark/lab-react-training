@@ -233,3 +233,30 @@ clip-path: circle(50%)
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.face-book {
+  padding: 10px;
+  border: solid;
+  border-color: rgb(4, 51, 63);
+  margin: 20px 0px;
+  font-size: 1.6rem;
+ 
+  line-height: 80%;
+  font-family: "Lato"
+}
+
+.face-book div:nth-child(1) {
+  width: 200px;
+  height: 200px;
+}
+.face-book img {
+  width: 200px;
+  height: auto;
+}
+.facebook p {
+  font-weight: 800;
+}
+
+.facebook span {
+  font-weight: 100;
+}
