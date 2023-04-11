@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -13,8 +13,19 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
+
+  const [users, setUsers] = useState('');
+
+  const addUser = (newUser) => {
+    const updatedUsers = [...users, newUser];
+    setUsers(updatedUsers)
+    console.log('signup page users: ', users)
+    console.log('Hola')
+  }
+
   return (
     <div className="App">
       {/* ITERATION 1 */}
@@ -137,8 +148,11 @@ function App() {
       {/* ITERATION 12 */}
       <NumbersTable limit={30} />
 
-      {/* ITERATION 13 */}
+      {/* ITERATION 13 and 14*/}
       <FaceBook />
+
+      {/* ITERATION 15 */}
+      <SignupPage addUser={addUser}/>
     </div>
   );
 }

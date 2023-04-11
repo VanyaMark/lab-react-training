@@ -6,7 +6,6 @@ const BoxColor = ({r, g, b}) => {
         if (hexCol.length < 2) {
             hexCol = 0 + hexCol
         }
-        console.log('hexCol: ', el.toString(16))
         return hexCol;
     }
   return (

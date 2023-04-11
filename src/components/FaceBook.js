@@ -1,12 +1,42 @@
-import React from 'react';
+import {useState} from 'react';
 import profiles from './../data/berlin.json';
 
 const FaceBook = () => {
+    const [countryChoice, setCountryChoice] = useState(null);
+
+    const countryArr = profiles.map((el)=> el.country)
+
+    const countryArrDef = [];
+    const getCountryArrDef = () => {
+        for (let i=0; i<countryArr.length; i++) {
+            let elExists = countryArrDef.includes(countryArr[i])
+            if (!elExists) {
+                countryArrDef.push(countryArr[i])
+            }
+        }
+        console.log('countryArrDef ', countryArrDef)
+    }
+    getCountryArrDef();
+
+const handleClick = (country) => {
+    console.log('country ', country)
+    for (let i=0; i<profiles.length;i++) {
+
+        if (country === profiles.country)
+        console.log(profiles.firstName)
+    }
+    }
+
   return (
     <div>
+    {countryArrDef.map(country => {
+        return (
+            <button onClick={() => handleClick({country})}>{country}</button>
+        )
+    })}
       {profiles.map((profile) => {
         return (
-          <div className="face-book row">
+          <div key={profile.lastName} className="face-book row">
             <div className="col-md-4">
               <img src={profile.img} alt="profile" />
             </div>
